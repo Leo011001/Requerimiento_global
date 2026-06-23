@@ -42,10 +42,10 @@ export default function Usuarios() {
         </form>
 
         <table>
-          <thead><tr><th>Nombre</th><th>Correo</th><th>Tipo</th><th>Activo</th></tr></thead>
+         <thead><tr><th>ID</th><th>Nombre</th><th>Correo</th><th>Tipo</th><th>Activo</th></tr></thead>
           <tbody>
             {usuarios.map((u) => (
-              <tr key={u.id}><td>{u.nombre}</td><td>{u.correo}</td><td>{u.tipo}</td><td>{u.activo ? "Sí" : "No"}</td></tr>
+             <tr key={u.id}><td>{u.id}</td><td>{u.nombre}</td><td>{u.correo}</td><td>{u.tipo}</td><td>{u.activo ? "Sí" : "No"}</td></tr>
             ))}
           </tbody>
         </table>

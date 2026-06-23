@@ -12,8 +12,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 
-db = SQLAlchemy()           # Singleton: única instancia de acceso a datos
-jwt = JWTManager()          # Maneja autenticación por tokens
+db = SQLAlchemy()           
+jwt = JWTManager()          
 
 
 def create_app():

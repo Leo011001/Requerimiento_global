@@ -39,10 +39,10 @@ export default function Libros() {
         </form>
 
         <table>
-          <thead><tr><th>Título</th><th>Autor</th><th>ISBN</th><th>Disponibles</th></tr></thead>
+          <thead><tr><th>ID</th><th>Título</th><th>Autor</th><th>ISBN</th><th>Disponibles</th></tr></thead>
           <tbody>
             {libros.map((l) => (
-              <tr key={l.id}><td>{l.titulo}</td><td>{l.autor}</td><td>{l.isbn}</td><td>{l.copias_disponibles}/{l.copias_totales}</td></tr>
+             <tr key={l.id}><td>{l.id}</td><td>{l.titulo}</td><td>{l.autor}</td><td>{l.isbn}</td><td>{l.copias_disponibles}/{l.copias_totales}</td></tr>
             ))}
           </tbody>
         </table>

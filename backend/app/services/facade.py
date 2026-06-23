@@ -3,7 +3,7 @@ PATRÓN FACADE:
 `BibliotecaFacade` ofrece una interfaz simple y unificada para las
 operaciones más comunes del sistema, ocultando los detalles de validación,
 construcción de objetos (Builder) y persistencia. Las rutas Flask llaman
-a la fachada en lugar de manejar directamente SQLAlchemy y los builders.
+a la fachada en lugar de manejar directamente SQLAlchemy y los builders.    
 """
 from app import db
 from app.models import Usuario, Libro
